@@ -32,7 +32,6 @@ table {
 
 th {
 	color: gray;
-	line-height: 250%;
 }
 
 th, td {
@@ -48,7 +47,7 @@ table, tr, th, td {
 }
 
 td audio {
-	width: calc(100% - 2em);
+	width: 100%;
 }
 
 a {
