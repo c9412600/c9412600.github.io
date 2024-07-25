@@ -35,6 +35,10 @@ th {
 	line-height: 250%;
 }
 
+th, td {
+	padding: 1em;
+}
+
 tr, th, td {
 	text-align: center;
 }
