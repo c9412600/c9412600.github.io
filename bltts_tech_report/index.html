@@ -2,336 +2,337 @@
 <html>
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
 
-  <title>BLTTS</title>
-  <meta name="generator" content="Jekyll v3.9.0">
-  <meta property="og:title" content="TODO: title">
-  <meta property="og:locale" content="en_US">
+	<title>BLTTS</title>
+	<meta name="generator" content="Jekyll v3.9.0">
+	<meta property="og:title" content="TODO: title">
+	<meta property="og:locale" content="en_US">
 
-  <meta name="twitter:card" content="summary">
+	<meta name="twitter:card" content="summary">
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#157878">
-  <link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#157878">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <section class="page-header">
+	<section class="page-header">
 
 
 
-  </section>
+	</section>
 
-  <section class="main-content" style="padding: 50px 150px;">
-    <h1 id="title">BLTTS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h1>
+	<section class="main-content" style="padding: 50px 150px;">
+	<h1 id="title">BLTTS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h1>
 
-    <p style="text-align: center;">Xxxxxx Xxx, Xxxxxx Xxx, Xxxxxx Xxx, Xxxxxx Xxx, Xxxxxx Xxx, Xxxxxx Xxx</p>
-      
-    <p style="text-align: center;">XX Xxx, Xxx Xxx</p>
+	<p style="text-align: center;">Xxxxxx Xxx, Xxxxxx Xxx, Xxxxxx Xxx, Xxxxxx Xxx, Xxxxxx Xxx, Xxxxxx Xxx</p>
+		
+	<p style="text-align: center;">XX Xxx, Xxx Xxx</p>
 
-    <h2 id="abstract">1. Abstract<a name="abstract"></a></h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <h2>Contents</h2>
-    <ul style="list-style-type: none;padding-left: 0;">
+	<h2 id="abstract">1. Abstract<a name="abstract"></a></h2>
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<h2>Contents</h2>
+	<ul style="list-style-type: disc;padding-left: 1.5em;">
+		<li><a href="#fig1">BL-TTS overview</a></li>
+		<li><a href="#fig2">Dialect MoE overview</a></li>
 		<li><a href="#chinese_dialect">Chinese Dialect</a></li>
+		<ul style="list-style-type: circle;padding-left: 1.5em;">
+			<li><a href="#chinese_dialect_short">Short-Length Text-to-Speech Demo</a></li>
+			<li><a href="#chinese_dialect_medium">Medium-Length Text-to-Speech Demo</a></li>
+			<li><a href="#chinese_dialect_long">Long-Length Text-to-Speech Demo</a></li>
+		</ul>
 		<li><a href="#mandarin_0_shot">Mandarin Zero-shot In-context Learning</a>
 		<li><a href="#mandarin_speaker">Mandarin Speaker Fine-tune</a>
-    </ul>
+	</ul>
 
-    <p style="text-align: center;"><img src='images/figure1.jpg' style="max-width: 100%;max-height: 256px;"></p>
-    <div align="center"><b>Fig.1</b> The overview architecture of BLTTS</div>
-
-    <br><br>
-	
-	<p style="text-align: center;"><img src='images/figure2.jpg' style="max-width: 100%;max-height: 384px;"></p>
-    <div align="center"><b>Fig.2</b> The structure of Dialect MoE</div>
-
-    <br><br>
-
-    <h2>2. Chinese Dialect<a name="chinese_dialect"></a></h2>
-	<header style="font-size: xx-small;margin-bottom: 3em;">
-    <p>来源：</p>
-	<ol style="padding-left: 1.5em;">
-		<li>卢甲文《郑州方言志》、李荣 贺巍《洛阳方言词典》收录的语料</li>
-		<li>释小龙、张国立、山新等演员的台词</li>
-		<li>唐宋时期涉及河南名城（洛阳、开封）或历史人物（岳飞）的古诗词</li>
-		<li>自编自我介绍</li>
-	</ol>
-	</header>
-	<h3>2.1 Short-Length Text-to-Speech Demo</h3>
-	<table style="width: 100%;">
-      <thead>
-        <tr>
-          <th style="width: 10%;"><strong>Language</strong></th>
-          <th style="width: 40%;"><strong>Text</strong></th>
-          <th style="width: 25%;"><strong>Generated</strong></th>
-          <th style="width: 25%;"><strong>Ground Truth</strong></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>芝麻叶儿黄橛橛，有后娘就有后爹。</td>
-          <td><audio src="audios/henan_C102.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_01.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>狗咬吕洞宾，不识好赖人。</td>
-          <td><audio src="audios/henan_C106.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_02.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>蒸馍省，烙馍费，当房卖地吃锅盔。</td>
-          <td><audio src="audios/henan_C108.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_03.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>小老鼠儿，上灯台，偷油吃，下不来。</td>
-          <td><audio src="audios/henan_C110.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_05.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>我读书少，你别啜我。</td>
-          <td><audio src="audios/henan_C115.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_06.wav" controls="" preload=""></audio></td>
-        </tr>
-      </tbody>
-    </table>
-	
-	<br>
-	
-	<h3>2.2 Medium-Length Text-to-Speech Demo</h3>
-	<table style="width: 100%;">
-      <thead>
-        <tr>
-          <th style="width: 10%;"><strong>Language</strong></th>
-          <th style="width: 40%;"><strong>Text</strong></th>
-          <th style="width: 25%;"><strong>Generated</strong></th>
-          <th style="width: 25%;"><strong>Ground Truth</strong></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>恁要是不想上这课，你就跟我疯啊，别搁这儿跟我憋火儿啊。</td>
-          <td><audio src="audios/henan_C120.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_09.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>椿树椿树你姓王，你发粗来我长长，我长长来穿衣裳，你发粗来做架梁。</td>
-          <td><audio src="audios/henan_C107.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_10.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>你给我贱了不是，给我贱了不是，你再贱，我跟你说，我一巴掌脸给你㧾叉。</td>
-          <td><audio src="audios/henan_C113.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_11.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>盘脚盘，盘三年，三年满，点油盐，油盐发，种芝麻，芝麻地里结打瓜。</td>
-          <td><audio src="audios/henan_C104.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_12.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>肯定回呀，到时候介绍师父给恁认识，师父是这个世界上最好嘞人。</td>
-          <td><audio src="audios/henan_C123.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_13.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>恁找谁呀？俺不认识恁，恁咋知道俺嘞大号呀？恁咋啥都知道哇？</td>
-          <td><audio src="audios/henan_C124.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_14.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>汴水东流无限春，隋家宫阙已成尘。行人莫上长堤望，风起杨花愁杀人。</td>
-          <td><audio src="audios/henan_C128.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_15.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>你真嘞以为我就是恁妈说嘞那样儿啊，我今天全靠着叶家、全靠着恁妈，我就是一个吃软饭嘞？</td>
-          <td><audio src="audios/henan_C121.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_16.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>咱们有请刚从少林寺学艺十年归来嘞狗剩儿兄弟，给大伙儿打几路拳脚，啊，助助兴，咋样儿？</td>
-          <td><audio src="audios/henan_C122.mp3" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_17.wav" controls="" preload=""></audio></td>
-        </tr>
-      </tbody>
-    </table>
-
-	<br>
-	
-	<h3>2.3 Long-Length Text-to-Speech Demo</h3>
-	<table style="width: 100%;">
-      <thead>
-        <tr>
-          <th style="width: 10%;"><strong>Language</strong></th>
-          <th style="width: 40%;"><strong>Text</strong></th>
-          <th style="width: 25%;"><strong>Generated</strong></th>
-          <th style="width: 25%;"><strong>Ground Truth</strong></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>俺老家是河南南阳嘞，那可是个好地儿，回头恁去俺那儿喽，我管给恁安排。我这个人嘞，性格比较活泼，有啥说啥，从来不拐弯抹角嘞。平时就好跟朋友们聚一块儿，喷喷空儿，吃吃零嘴儿。跟俺那一片儿，关系都可好了，平时街坊邻居有啥事儿，我也都会去帮帮忙儿。</td>
-          <td><audio src="audios/henan_long_demo_1.wav" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_18.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>我嘞爱好也可多了，好听豫剧，那腔调儿，听着得劲儿嘞很。没事嘞时候我也好出去溜达溜达，逛逛俺河南嘞大好风光。我还好捣鼓点儿吃嘞，像那烩面呀、胡辣汤呀，你别说，我自己做嘞也可像回事儿。</td>
-          <td><audio src="audios/henan_long_demo_2.wav" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_19.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Henan Dialect</td>
-          <td>我一直觉得，只要肯下劲儿，就没有啥事儿是干不成嘞。这就是我，一个可普通但是也可热情嘞人。希望大家多关照了，咱一起儿开开心心嘞！谢谢大家！</td>
-          <td><audio src="audios/henan_long_demo_3.wav" controls="" preload=""></audio></td>
-          <td><audio src="audios/henan_20.wav" controls="" preload=""></audio></td>
-        </tr>
-      </tbody>
-    </table>
+	<p style="text-align: center;"><img src='images/figure1.jpg' style="max-width: 100%;max-height: 256px;"></p>
+	<div align="center"><b>Fig.1</b> The overview architecture of BLTTS<a name="fig1"></a></div>
 
 	<br><br>
 	
-    <h2>3. Mandarin Zero-shot In-context Learning<a name="mandarin_0_shot"></a></h2>
-    <table style="width: 100%;">
-      <thead>
-        <tr>
-          <th style="width: 10%;"><strong>Language</strong></th>
-          <th style="width: 40%;"><strong>Prompt</strong></th>
-          <th style="width: 25%;"><strong>Generated</strong></th>
-          <th style="width: 25%;"><strong>Generated</strong></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Mandarin</td>
-          <td><p>　</p><audio src="audios/24300009.wav" controls="" preload=""></audio></td>
-          <td><p>呃，这天气真是太热了，真是一点也不想动。</p><audio src="audios/M101-老年音-24300001_9400_1.wav" controls="" preload=""></audio></td>
-          <td><p>我突然想起一个冷笑话，呵呵呵，你想不想听？</p><audio src="audios/M101-老年音-24300001_9400_2.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Mandarin</td>
-          <td><p>　</p><audio src="audios/12900007.wav" controls="" preload=""></audio></td>
-          <td><p>嘶呃，关于这个问题我们还得好好思考思考，并不是那么简单的。</p><audio src="audios/M07-青年音-温情男_5380_1.wav" controls="" preload=""></audio></td>
-          <td><p>这个问题，嗯嘶，从另一个角度看，是不是对我们来说也是一件好事？</p><audio src="audios/M07-青年音-温情男_5380_2.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Mandarin</td>
-          <td><p>　</p><audio src="audios/22300058.wav" controls="" preload=""></audio></td>
-          <td><p>喽，明天又是周末啦，一起去看个电影吧。</p><audio src="audios/F02-少年音-可爱男_3635_1_2.wav" controls="" preload=""></audio></td>
-          <td><p>想出这个方法的人真是太有才了，那个人就是我，嘿嘿嘿嘿。</p><audio src="audios/F02-少年音-可爱男_3635_2_2.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Mandarin</td>
-          <td><p>　</p><audio src="audios/27400073.wav" controls="" preload=""></audio></td>
-          <td><p>嗯，爸爸说要好好吃饭才能长高高，所以我要吃多多的饭长高高。</p><audio src="audios/KM09-童声-27400001_3700_1_2.wav" controls="" preload=""></audio></td>
-          <td><p>呃，小孩子是不能玩火的，玩火容易受伤。</p><audio src="audios/KM09-童声-27400001_3700_2_2.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Mandarin</td>
-          <td><p>　</p><audio src="audios/23300005.wav" controls="" preload=""></audio></td>
-          <td><p>嗯，回想起当年，这里还是个小村庄。</p><audio src="audios/F04-老年音-老年女_5395_1.wav" controls="" preload=""></audio></td>
-          <td><p>说起我们以前的事，啊，那真是三天三夜都说不完。</p><audio src="audios/F04-老年音-老年女_5395_2.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Mandarin</td>
-          <td><p>　</p><audio src="audios/26500011.wav" controls="" preload=""></audio></td>
-          <td><p>呃，这个事已经过去那么久了，就不要再说了。</p><audio src="audios/F74-中年音-知性女_5395_1_2.wav" controls="" preload=""></audio></td>
-          <td><p>嘶，我才意识到我刚犯了个错。</p><audio src="audios/F74-中年音-知性女_5395_1_3.wav" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Mandarin</td>
-          <td><p>　</p><audio src="audios/24100040.wav" controls="" preload=""></audio></td>
-          <td><p>按照我说的，不出三天你的病就好了，嘻嘻。</p><audio src="audios/F14-少年音-萝莉可爱型_4980_1.wav" controls="" preload=""></audio></td>
-          <td><p>哦，你说的是这个啊，这是我去海边的时候捡到的。</p><audio src="audios/F14-少年音-萝莉可爱型_4980_2.wav" controls="" preload=""></audio></td>
-        </tr>
-      </tbody>
-    </table>
+	<p style="text-align: center;"><img src='images/figure2.jpg' style="max-width: 100%;max-height: 384px;"></p>
+	<div align="center"><b>Fig.2</b> The structure of Dialect MoE<a name="fig2"></div>
 
-    <br><br>
+	<br><br>
 
-    <h2>4. Mandarin Speaker Fine-tune<a name="mandarin_speaker"></a></h2>
+	<h2>2. Chinese Dialect<a name="chinese_dialect"></a></h2>
 	<header style="font-size: xx-small;margin-bottom: 3em;">
-    <p>文本来自：<a href="https://bcc.blcu.edu.cn/" target="_blank">https://bcc.blcu.edu.cn/</a> BCC语料库，部分有小调整。</p>
+	<p>文本来源：①卢甲文《郑州方言志》、李荣 贺巍《洛阳方言词典》收录的语料；②释小龙、张国立、山新等演员的台词；③唐宋时期涉及河南名城（洛阳、开封）或历史人物（岳飞）的古诗词；④自编自我介绍。</p>
 	</header>
-    <table style="width: 100%;">
-      <thead>
-        <tr>
-          <th style="width: 10%;"><strong>Language</strong></th>
-          <th style="width: 40%;"><strong>Text</strong></th>
-          <th style="width: 50%;"><strong>Generated</strong></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Mandarin</td>
-          <td>呵呵，你是我朋友里唯一一个喝汽水放完气再喝的。</td>
-          <td><audio src="audios/mandarin_C103.mp3" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Mandarin</td>
-          <td>让我算算，嗯，一共是六万五千五百三十六天，对吧？</td>
-          <td><audio src="audios/mandarin_C105.mp3" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Mandarin</td>
-          <td>理事长的事情也好，市井游马的事情也好，呃……仔细想想也不难理解啦。</td>
-          <td><audio src="audios/mandarin_C106.mp3" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Mandarin</td>
-          <td>啊！我现在好困，你们每天这样玩儿，上班不困吗？</td>
-          <td><audio src="audios/mandarin_C107.mp3" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Mandarin</td>
-          <td>呃你这个梦属于超现实主义，狂想派的。</td>
-          <td><audio src="audios/mandarin_C111.mp3" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Mandarin</td>
-          <td>嗯……在叛乱军灭亡之时，莱因哈特也会倒下的。</td>
-          <td><audio src="audios/mandarin_C114.mp3" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Mandarin</td>
-          <td>没啥讲究就好，我怕是走错了方向，呵呵。</td>
-          <td><audio src="audios/mandarin_C116.mp3" controls="" preload=""></audio></td>
-        </tr>
-        <tr>
-          <td>Mandarin</td>
-          <td>呐，在这种公众场合还是低调点好。</td>
-          <td><audio src="audios/mandarin_C120.mp3" controls="" preload=""></audio></td>
-        </tr>
-      </tbody>
-    </table>
+	<h3>2.1 Short-Length Text-to-Speech Demo<a name="chinese_dialect_short"></a></h3>
+	<table style="width: 100%;">
+		<thead>
+		<tr>
+			<th style="width: 10%;"><strong>Language</strong></th>
+			<th style="width: 40%;"><strong>Text</strong></th>
+			<th style="width: 25%;"><strong>Generated</strong></th>
+			<th style="width: 25%;"><strong>Ground Truth</strong></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>芝麻叶儿黄橛橛，有后娘就有后爹。</td>
+			<td><audio src="audios/henan_C102.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_01.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>狗咬吕洞宾，不识好赖人。</td>
+			<td><audio src="audios/henan_C106.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_02.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>蒸馍省，烙馍费，当房卖地吃锅盔。</td>
+			<td><audio src="audios/henan_C108.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_03.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>小老鼠儿，上灯台，偷油吃，下不来。</td>
+			<td><audio src="audios/henan_C110.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_05.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>我读书少，你别啜我。</td>
+			<td><audio src="audios/henan_C115.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_06.wav" controls="" preload=""></audio></td>
+		</tr>
+		</tbody>
+	</table>
+	
+	<br>
+	
+	<h3>2.2 Medium-Length Text-to-Speech Demo<a name="chinese_dialect_medium"></a></h3>
+	<table style="width: 100%;">
+		<thead>
+		<tr>
+			<th style="width: 10%;"><strong>Language</strong></th>
+			<th style="width: 40%;"><strong>Text</strong></th>
+			<th style="width: 25%;"><strong>Generated</strong></th>
+			<th style="width: 25%;"><strong>Ground Truth</strong></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>恁要是不想上这课，你就跟我疯啊，别搁这儿跟我憋火儿啊。</td>
+			<td><audio src="audios/henan_C120.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_09.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>椿树椿树你姓王，你发粗来我长长，我长长来穿衣裳，你发粗来做架梁。</td>
+			<td><audio src="audios/henan_C107.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_10.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>你给我贱了不是，给我贱了不是，你再贱，我跟你说，我一巴掌脸给你㧾叉。</td>
+			<td><audio src="audios/henan_C113.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_11.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>盘脚盘，盘三年，三年满，点油盐，油盐发，种芝麻，芝麻地里结打瓜。</td>
+			<td><audio src="audios/henan_C104.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_12.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>肯定回呀，到时候介绍师父给恁认识，师父是这个世界上最好嘞人。</td>
+			<td><audio src="audios/henan_C123.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_13.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>恁找谁呀？俺不认识恁，恁咋知道俺嘞大号呀？恁咋啥都知道哇？</td>
+			<td><audio src="audios/henan_C124.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_14.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>汴水东流无限春，隋家宫阙已成尘。行人莫上长堤望，风起杨花愁杀人。</td>
+			<td><audio src="audios/henan_C128.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_15.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>你真嘞以为我就是恁妈说嘞那样儿啊，我今天全靠着叶家、全靠着恁妈，我就是一个吃软饭嘞？</td>
+			<td><audio src="audios/henan_C121.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_16.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>咱们有请刚从少林寺学艺十年归来嘞狗剩儿兄弟，给大伙儿打几路拳脚，啊，助助兴，咋样儿？</td>
+			<td><audio src="audios/henan_C122.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_17.wav" controls="" preload=""></audio></td>
+		</tr>
+		</tbody>
+	</table>
+
+	<br>
+	
+	<h3>2.3 Long-Length Text-to-Speech Demo<a name="chinese_dialect_long"></a></h3>
+	<table style="width: 100%;">
+		<thead>
+		<tr>
+			<th style="width: 10%;"><strong>Language</strong></th>
+			<th style="width: 40%;"><strong>Text</strong></th>
+			<th style="width: 25%;"><strong>Generated</strong></th>
+			<th style="width: 25%;"><strong>Ground Truth</strong></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>俺老家是河南南阳嘞，那可是个好地儿，回头恁去俺那儿喽，我管给恁安排。我这个人嘞，性格比较活泼，有啥说啥，从来不拐弯抹角嘞。平时就好跟朋友们聚一块儿，喷喷空儿，吃吃零嘴儿。跟俺那一片儿，关系都可好了，平时街坊邻居有啥事儿，我也都会去帮帮忙儿。</td>
+			<td><audio src="audios/henan_long_demo_1.wav" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_18.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>我嘞爱好也可多了，好听豫剧，那腔调儿，听着得劲儿嘞很。没事嘞时候我也好出去溜达溜达，逛逛俺河南嘞大好风光。我还好捣鼓点儿吃嘞，像那烩面呀、胡辣汤呀，你别说，我自己做嘞也可像回事儿。</td>
+			<td><audio src="audios/henan_long_demo_2.wav" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_19.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Henan Dialect</td>
+			<td>我一直觉得，只要肯下劲儿，就没有啥事儿是干不成嘞。这就是我，一个可普通但是也可热情嘞人。希望大家多关照了，咱一起儿开开心心嘞！谢谢大家！</td>
+			<td><audio src="audios/henan_long_demo_3.wav" controls="" preload=""></audio></td>
+			<td><audio src="audios/henan_20.wav" controls="" preload=""></audio></td>
+		</tr>
+		</tbody>
+	</table>
+
+	<br><br>
+	
+	<h2>3. Mandarin Zero-shot In-context Learning<a name="mandarin_0_shot"></a></h2>
+	<table style="width: 100%;">
+		<thead>
+		<tr>
+			<th style="width: 10%;"><strong>Language</strong></th>
+			<th style="width: 40%;"><strong>Prompt</strong></th>
+			<th style="width: 25%;"><strong>Generated</strong></th>
+			<th style="width: 25%;"><strong>Generated</strong></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Mandarin</td>
+			<td><p>　</p><audio src="audios/24300009.wav" controls="" preload=""></audio></td>
+			<td><p>呃，这天气真是太热了，真是一点也不想动。</p><audio src="audios/M101-老年音-24300001_9400_1.wav" controls="" preload=""></audio></td>
+			<td><p>我突然想起一个冷笑话，呵呵呵，你想不想听？</p><audio src="audios/M101-老年音-24300001_9400_2.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td><p>　</p><audio src="audios/12900007.wav" controls="" preload=""></audio></td>
+			<td><p>嘶呃，关于这个问题我们还得好好思考思考，并不是那么简单的。</p><audio src="audios/M07-青年音-温情男_5380_1.wav" controls="" preload=""></audio></td>
+			<td><p>这个问题，嗯嘶，从另一个角度看，是不是对我们来说也是一件好事？</p><audio src="audios/M07-青年音-温情男_5380_2.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td><p>　</p><audio src="audios/22300058.wav" controls="" preload=""></audio></td>
+			<td><p>喽，明天又是周末啦，一起去看个电影吧。</p><audio src="audios/F02-少年音-可爱男_3635_1_2.wav" controls="" preload=""></audio></td>
+			<td><p>想出这个方法的人真是太有才了，那个人就是我，嘿嘿嘿嘿。</p><audio src="audios/F02-少年音-可爱男_3635_2_2.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td><p>　</p><audio src="audios/27400073.wav" controls="" preload=""></audio></td>
+			<td><p>嗯，爸爸说要好好吃饭才能长高高，所以我要吃多多的饭长高高。</p><audio src="audios/KM09-童声-27400001_3700_1_2.wav" controls="" preload=""></audio></td>
+			<td><p>呃，小孩子是不能玩火的，玩火容易受伤。</p><audio src="audios/KM09-童声-27400001_3700_2_2.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td><p>　</p><audio src="audios/23300005.wav" controls="" preload=""></audio></td>
+			<td><p>嗯，回想起当年，这里还是个小村庄。</p><audio src="audios/F04-老年音-老年女_5395_1.wav" controls="" preload=""></audio></td>
+			<td><p>说起我们以前的事，啊，那真是三天三夜都说不完。</p><audio src="audios/F04-老年音-老年女_5395_2.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td><p>　</p><audio src="audios/26500011.wav" controls="" preload=""></audio></td>
+			<td><p>呃，这个事已经过去那么久了，就不要再说了。</p><audio src="audios/F74-中年音-知性女_5395_1_2.wav" controls="" preload=""></audio></td>
+			<td><p>嘶，我才意识到我刚犯了个错。</p><audio src="audios/F74-中年音-知性女_5395_1_3.wav" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td><p>　</p><audio src="audios/24100040.wav" controls="" preload=""></audio></td>
+			<td><p>按照我说的，不出三天你的病就好了，嘻嘻。</p><audio src="audios/F14-少年音-萝莉可爱型_4980_1.wav" controls="" preload=""></audio></td>
+			<td><p>哦，你说的是这个啊，这是我去海边的时候捡到的。</p><audio src="audios/F14-少年音-萝莉可爱型_4980_2.wav" controls="" preload=""></audio></td>
+		</tr>
+		</tbody>
+	</table>
+
+	<br><br>
+
+	<h2>4. Mandarin Speaker Fine-tune<a name="mandarin_speaker"></a></h2>
+	<header style="font-size: xx-small;margin-bottom: 3em;">
+	<p>文本来源：<a href="https://bcc.blcu.edu.cn/" target="_blank">https://bcc.blcu.edu.cn/</a> BCC语料库，部分有小调整。</p>
+	</header>
+	<table style="width: 100%;">
+		<thead>
+		<tr>
+			<th style="width: 10%;"><strong>Language</strong></th>
+			<th style="width: 40%;"><strong>Text</strong></th>
+			<th style="width: 50%;"><strong>Generated</strong></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Mandarin</td>
+			<td>呵呵，你是我朋友里唯一一个喝汽水放完气再喝的。</td>
+			<td><audio src="audios/mandarin_C103.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td>让我算算，嗯，一共是六万五千五百三十六天，对吧？</td>
+			<td><audio src="audios/mandarin_C105.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td>理事长的事情也好，市井游马的事情也好，呃……仔细想想也不难理解啦。</td>
+			<td><audio src="audios/mandarin_C106.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td>啊！我现在好困，你们每天这样玩儿，上班不困吗？</td>
+			<td><audio src="audios/mandarin_C107.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td>呃你这个梦属于超现实主义，狂想派的。</td>
+			<td><audio src="audios/mandarin_C111.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td>嗯……在叛乱军灭亡之时，莱因哈特也会倒下的。</td>
+			<td><audio src="audios/mandarin_C114.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td>没啥讲究就好，我怕是走错了方向，呵呵。</td>
+			<td><audio src="audios/mandarin_C116.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td>Mandarin</td>
+			<td>呐，在这种公众场合还是低调点好。</td>
+			<td><audio src="audios/mandarin_C120.mp3" controls="" preload=""></audio></td>
+		</tr>
+		</tbody>
+	</table>
 	
 	
 	
 	
 
-  </section>
+	</section>
 </body>
 
 </html>
