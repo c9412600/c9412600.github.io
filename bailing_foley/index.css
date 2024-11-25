@@ -3,6 +3,7 @@ body {
 }
 
 body header, body article, body footer {
+    display: block;
     background-color: blue;
 }
 
