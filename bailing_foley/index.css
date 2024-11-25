@@ -1,3 +1,9 @@
+.content {
+    width: 1024px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px grey;
+}
+
 .a_paper::before, .a_code::before, .a_video::before {
     font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Segoe UISymbol', 'Noto Color Emoji';
     padding-right: 1em;
