@@ -1,10 +1,9 @@
 body {
-    background-color: orange;
+    text-align: center;
 }
 
 body header, body article, body footer {
     display: block;
-    background-color: blue;
     margin: 32px;
 }
 
