@@ -5,6 +5,7 @@ body {
 body header, body article, body footer {
     display: block;
     background-color: blue;
+    margin: 32px;
 }
 
 .content {
@@ -15,6 +16,7 @@ body header, body article, body footer {
 }
 
 .content h1, .content h2 {
+    display: inline-block;
     font-weight: bold;
     text-align: center;
 }
