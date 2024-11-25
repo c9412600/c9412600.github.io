@@ -4,7 +4,7 @@ body {
 
 body header, body article, body footer {
     display: block;
-    margin: 32px;
+    margin: 32px auto;
 }
 
 .content {
