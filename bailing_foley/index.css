@@ -1,0 +1,16 @@
+.a_paper::before, .a_code::before, .a_youtube::before {
+    font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Segoe UISymbol', 'Noto Color Emoji';
+    padding-right: 1em;
+}
+
+.a_paper::before {
+    content: '📄';
+}
+
+.a_code::before {
+    content: '⌨';
+}
+
+.a_video::before {
+    content: '📽';
+}
