@@ -12,6 +12,8 @@ body header, body article, body footer {
     border-radius: 16px;
     box-shadow: 4px 4px 8px grey;
     padding: 32px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .content h1, .content h2, .content h3 {
