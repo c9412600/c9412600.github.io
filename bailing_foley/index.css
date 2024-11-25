@@ -17,12 +17,24 @@ body header, body article, body footer {
 .content h1, .content h2, .content h3 {
     display: inline-block;
     font-weight: bold;
+}
+
+.content h1, .content h2 {
     text-align: center;
+}
+
+.content h3 {
+    text-align: left;
+}
+
+.a_paper, .a_code, .a_video {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .a_paper::before, .a_code::before, .a_video::before {
     font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Segoe UISymbol', 'Noto Color Emoji';
-    padding-right: 1em;
+    padding-right: 0.5em;
 }
 
 .a_paper::before {
@@ -35,4 +47,8 @@ body header, body article, body footer {
 
 .a_video::before {
     content: '📽';
+}
+
+.row {
+
 }
