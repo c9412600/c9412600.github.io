@@ -27,6 +27,11 @@ body header, body article, body footer {
     text-align: left;
 }
 
+.content .img_illustration {
+    text-align: left;
+    width: 768px;
+}
+
 .a_paper, .a_code, .a_video {
     margin-left: 1em;
     margin-right: 1em;
