@@ -15,7 +15,7 @@ body header, body article, body footer {
     padding: 32px;
 }
 
-.content h1, .content h2 {
+.content h1, .content h2, .content h3 {
     display: inline-block;
     font-weight: bold;
     text-align: center;
