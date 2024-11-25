@@ -12,20 +12,18 @@ body header, body article, body footer {
     border-radius: 16px;
     box-shadow: 4px 4px 8px grey;
     padding: 32px;
-    display: flex;
-    justify-content: space-between;
 }
 
-.content h1, .content h2, .content h3 {
+.content .centerAlign h1, .content .centerAlign h2, .content .centerAlign h3, .content .leftAlign h1, .content .leftAlign h2, .content .leftAlign h3 {
     display: inline-block;
     font-weight: bold;
 }
 
-.content h1, .content h2 {
+.content .centerAlign {
     text-align: center;
 }
 
-.content h3 {
+.content .leftAlign {
     text-align: left;
 }
 
