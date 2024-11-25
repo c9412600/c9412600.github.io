@@ -28,6 +28,7 @@ body header, body article, body footer {
 }
 
 .content .img_illustration {
+    display: block;
     text-align: left;
     width: 768px;
 }
