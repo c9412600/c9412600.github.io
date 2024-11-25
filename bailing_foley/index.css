@@ -10,6 +10,7 @@ body header, body article, body footer {
     width: 1024px;
     border-radius: 16px;
     box-shadow: 4px 4px 8px grey;
+    padding: 32px;
 }
 
 .a_paper::before, .a_code::before, .a_video::before {
