@@ -55,6 +55,7 @@ body header, body article, body footer {
     content: '📽';
 }
 
-.row {
-
+.row video {
+    width: 752px;
+    height: 422px;
 }
