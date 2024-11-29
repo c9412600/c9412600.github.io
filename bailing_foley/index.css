@@ -62,7 +62,16 @@ body header, body article, body footer {
 }
 
 .row .cell {
-    background-color: #f9f9f9;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.row .cell video {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
+
