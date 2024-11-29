@@ -64,8 +64,5 @@ body header, body article, body footer {
 .row .cell {
     background-color: #f9f9f9;
     padding: 20px;
-}
-
-.row .cell video {
     object-fit: contain;
 }
