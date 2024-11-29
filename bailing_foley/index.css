@@ -55,12 +55,17 @@ body header, body article, body footer {
     content: '📽';
 }
 
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
 .row .cell {
-    width: 49%;
+    background-color: #f9f9f9;
+    padding: 20px;
 }
 
 .row .cell video {
     object-fit: fill;
-    width: 100%;
-    height: 100%;
 }
