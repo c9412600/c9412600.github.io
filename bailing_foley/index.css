@@ -60,13 +60,13 @@ body header, body article, body footer {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     width: 100%;
-    height: 432px;
 }
 
 .row .cell {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 432px;
 }
 
 .row .cell video {
