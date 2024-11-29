@@ -60,6 +60,7 @@ body header, body article, body footer {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     width: 100%;
+    background-color: lightgreen;
 }
 
 .row .cell {
