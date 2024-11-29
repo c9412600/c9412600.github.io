@@ -56,6 +56,6 @@ body header, body article, body footer {
 }
 
 .row video {
-    width: 752px;
     height: 422px;
+    width: auto;
 }
