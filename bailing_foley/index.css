@@ -66,6 +66,7 @@ body header, body article, body footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 480px;
 }
 
 .row .cell video {
