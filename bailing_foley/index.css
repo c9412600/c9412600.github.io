@@ -59,6 +59,7 @@ body header, body article, body footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+    width: 100%;
 }
 
 .row .cell {
