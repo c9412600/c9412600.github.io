@@ -60,12 +60,6 @@ body header, body article, body footer {
 }
 
 .row .cell video {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
     object-fit: fill;
     width: 100%;
     height: 100%;
