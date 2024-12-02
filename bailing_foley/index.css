@@ -86,7 +86,7 @@ body header, body article, body footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 432px;
+    height: 384px;
 }
 
 .row_3 .cell {
