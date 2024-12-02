@@ -33,6 +33,11 @@ body header, body article, body footer {
     width: 768px;
 }
 
+a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
 .a_paper, .a_code, .a_video {
     margin-left: 1em;
     margin-right: 1em;
@@ -45,6 +50,10 @@ body header, body article, body footer {
 
 .a_paper::before {
     content: '📄';
+}
+
+.a_sub::before {
+    text-indent: 1em;
 }
 
 .a_code::before {
