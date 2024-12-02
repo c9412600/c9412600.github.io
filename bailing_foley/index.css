@@ -52,16 +52,16 @@ a {
     content: '📄';
 }
 
-.a_sub::before {
-    text-indent: 1em;
-}
-
 .a_code::before {
     content: '⌨';
 }
 
 .a_video::before {
     content: '📽';
+}
+
+.a_sub {
+    text-indent: 1em;
 }
 
 .row {
