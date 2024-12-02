@@ -69,27 +69,48 @@ body header, body article, body footer {
     width: 100%;
 }
 
-.row .title, .row_3 .title {
+.row_5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.row .title, .row_3 .title, .row_5 .title {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.row .cell, .row_3 .cell {
+.row .cell {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 432px;
 }
 
-.row .cell video, .row_3 .cell video {
+.row_3 .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 256px;
+}
+
+.row_5 .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 128px;
+}
+
+.row .cell video, .row_3 .cell video, .row_5 .cell video {
     width: 100%;
     height: 100%;
     object-fit: contain;
     background-color: black;
 }
 
-.row .cell img, .row_3 .cell img {
+.row .cell img, .row_3 .cell img, .row_5 .cell img {
     width: 100%;
     height: 100%;
 }
