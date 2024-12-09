@@ -2,14 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Bailing-Foley</title>
+        <title>YingSound</title>
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     
     <body>
         <header class="content">
             <div class="centerAlign">
-                <h1>Bailing-Foley:&nbsp;Video-Guided&nbsp;Sound&nbsp;Effects&nbsp;Generation<br>with&nbsp;Multimodal&nbsp;Chain-of-Thoughts&nbsp;Controls</h1>
+                <h1>YingSound:&nbsp;Video-Guided&nbsp;Sound&nbsp;Effects&nbsp;Generation<br>with&nbsp;Multi-modal&nbsp;Chain-of-Thought&nbsp;Controls</h1>
             </div>
             <div class="centerAlign">
                 <p>
@@ -27,8 +27,8 @@
             </div>
             <div class="centerAlign">
                 <p>
-                    <a class="a_paper" href="https://arxiv.org/" target="_blank">[Paper]</a>
-                    <a class="a_code" href="https://git.devcloud.ztgame.com/" target="_blank">[Code]</a>
+                    <a class="a_paper" href="https://arxiv.org/" target="_blank">[Arxiv]</a>
+                    <!--<a class="a_code" href="https://git.devcloud.ztgame.com/" target="_blank">[Code]</a>-->
                     <a class="a_video" href="https://www.youtube.com/" target="_blank">[Promotional&nbsp;Video]</a>
                 </p>
             </div>
@@ -81,7 +81,7 @@
                 <h2>Abstract</h2>
             </div>
             <div class="leftAlign">
-                <p>Generating sound effects for videos requires creating industry-level sound effects that diverge significantly in order to produces high-quality audio generation in a few shot settings. To address this problem, we introduce Bailing-Foley, a foundation model designed for video-guided sound generation that supports high quality audio generation in a few shot setting. The foundation model is consisted with two modules. The first module is a <span style="font-weight: bold;">conditional flow-matching transformers building a fine-grained, learnable Audio-Vision Aggregator (AVA), integrates high-resolution visual features with corresponding audio features across multiple stages</span>. The second module is a <span style="font-weight: bold;">multi-modal visual-audio chain-of-thought framework that leverages advanced audio generation techniques to produce high-quality audio in few-shot settings</span>. Finally, <span style="font-weight: bold;">an industry-standard video-to-audio dataset</span> that encompasses a diverse array of real-world scenarios is built. Through both automated evaluations and human studies, we show that Bailing-Foley effectively generates synchronized, high-quality sounds across diverse conditional inputs, surpassing existing methods in performance.</p>
+                <p>Generating sound effects for videos requires creating industry-standard sound effects that diverge significantly to produce high-quality audio generation in few-shot settings. To address this problem, we introduce YingSound, a foundation model designed for video-guided sound generation that supports high-quality audio generation in few-shot settings. The foundation model consists of two modules. The first module is a <span style="font-weight: bold;">conditional flow matching transformer that builds a fine-grained, learnable Audio-Vision Aggregator (AVA) that integrates high-resolution visual features with corresponding audio features across multiple stages</span>. The second module is a <span style="font-weight: bold;">multi-modal visual-audio chain-of-thought framework that leverages advanced audio generation techniques to produce high-quality audio in few-shot settings</span>. Finally, <span style="font-weight: bold;">an industry-standard video-to-audio dataset that encompasses a diverse array of real-world scenarios is presented</span>. Through both automated evaluations and human studies, we show that YingSound effectively generates high-quality synchronized sounds across diverse conditional inputs, surpassing existing methods in performance.</p>
             </div>
         </article>
 
@@ -90,13 +90,13 @@
                 <h2>Method</h2>
             </div>
             <div class="centerAlign">
-                <img class="img_illustration" src="images/method.png" alt="Overview of Bailing-Foley">
+                <img class="img_illustration" src="images/method.png" alt="Overview of YingSound">
             </div>
             <div class="centerAlign">
-                <p>Figure&nbsp;1:&nbsp;Overview&nbsp;of&nbsp;Bailing-Foley.</p>
+                <p>Figure&nbsp;1:&nbsp;Overview&nbsp;of&nbsp;YingSound.</p>
             </div>
             <div class="leftAlign">
-                <p>1. We propose a fine-grained, learnable Audio-Vision Aggregator (AVA), a dynamic connector that integrates high-resolution visual features with corresponding audio features across multiple stages. 2. We propose a multi-modal visual-audio chain-of-thought framework that leverages advanced audio generation techniques to produce high-quality audio in few-shot settings, optimized through reinforcement learning. 3. We developed an industry-standard video-to-audio dataset that encompasses a diverse array of real-world scenarios, including sound effects from movies, games, and advertisements.</p>
+                <p>It comprises two key components: Conditional Flow Matching with Transformers and Adaptive Multi-modal Chain-of-Thought-Based Audio Generation.</p>
             </div>
         </article>
 
