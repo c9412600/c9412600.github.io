@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+	<title>Bailing-TTS</title>
+	<meta name="generator" content="Jekyll v3.9.0">
+	<meta property="og:title" content="TODO: title">
+	<meta property="og:locale" content="en_US">
+
+	<meta name="twitter:card" content="summary">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#157878">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<section class="page-header">
+
+
+
+	</section>
+
+	<section class="main-content" style="padding: 50px 150px;">
+	<h1 id="title">SVC Title</h1>
+
+	<p style="text-align: center;">A work submitted to ASRU 2025</p>
+
+	<!--<p style="text-align: center;">Xxxxx Xxx, Xxxxx Xxx, Xxxxx Xxx, Xxxxx Xxx, Xxxxx Xxx, Xxxxx Xxx</p>
+		
+	<p style="font-weight: bold;text-align: center;">AI Lab, Giant Network</p>-->
+
+	<h2 id="abstract">1. Abstract<a name="abstract"></a></h2>
+	<p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<!--<h2>Contents</h2>
+	<ul style="list-style-type: disc;padding-left: 1.5em;color: deepskyblue;">
+		<li><a href="#fig1">Bailing-TTS overview</a></li>
+		<li><a href="#fig2">Dialect MoE overview</a></li>
+		<li><a href="#demos">Chinese Dialect</a></li>
+		<li><a href="#mandarin_0_shot">Mandarin Zero-shot In-context Learning</a>
+		<li><a href="#mandarin_speaker">Mandarin Speaker Fine-tune</a>
+	</ul>-->
+
+	<a name="fig1"></a><p style="text-align: center;"><img src='images/figure1.jpg' style="max-width: 100%;max-height: 256px;"></p>
+	<div align="center"><!--<span style="font-weight: bold;">Fig.1</span> -->The overview architecture of SVC</div>
+
+	<br><br>
+	
+	<!--<a name="fig2"></a><p style="text-align: center;"><img src='images/figure2.jpg' style="max-width: 100%;max-height: 384px;"></p>
+	<div align="center"><span style="font-weight: bold;">Fig.2</span> The structure of Dialect MoE</div>
+
+	<br><br>-->
+
+	<h2>2. Demos</h2>
+	
+	<p>Compared Methods</p>
+	<ul style="list-style-type: disc;padding-left: 1.5em;color: deepskyblue;">
+		<li><a href="https://c9412600.github.io/">System 1</a>: a system.</li>
+		<li><a href="https://c9412600.github.io/">System 2</a>: another system.</li>
+	</ul>
+
+	<h3>Clean Samples</h3>
+
+	<br><br>
+		
+	<table style="width: 100%;">
+		<thead>
+		<tr>
+			<th style="width: 18%;"><strong>Prompt</strong></th>
+			<th style="width: 18%;"><strong>Source</strong></th>
+			<th style="width: 16%;"><strong>System 1</strong></th>
+			<th style="width: 16%;"><strong>System 2</strong></th>
+			<th style="width: 16%;"><strong>Ref 1 (Note)</strong></th>
+			<th style="width: 16%;"><strong>Ref 2 (Note)</strong></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		</tbody>
+	</table>
+	<!--<footer style="text-align: left;margin-top: 1em;font-size: xx-small;display: inline-block;">
+		<p>Chinese Dialect 示例文本来源：①卢甲文《郑州方言志》收录的语料；②张国立的台词；③自编自我介绍。</p>
+	</footer>-->
+	
+	<h3>Noisy Samples</h3>
+
+	<br><br>
+	
+	<table style="width: 100%;">
+		<thead>
+		<tr>
+			<th style="width: 18%;"><strong>Prompt</strong></th>
+			<th style="width: 18%;"><strong>Source</strong></th>
+			<th style="width: 16%;"><strong>System 1</strong></th>
+			<th style="width: 16%;"><strong>System 2</strong></th>
+			<th style="width: 16%;"><strong>Ref 1 (Note)</strong></th>
+			<th style="width: 16%;"><strong>Ref 2 (Note)</strong></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		</tbody>
+	</table>
+
+	<br><br>
+
+	<h3>Singing Voice Conversion</h3>
+	<p>*Note that …</p>
+	<table style="width: 100%;">
+		<thead>
+		<tr>
+			<th style="width: 10%;"></th>
+			<th style="width: 10%;"></th>
+			<th style="width: 20%;"><strong>Prompt</strong></th>
+			<th style="width: 20%;"><strong>Source</strong></th>
+			<th style="width: 20%;"><strong>System 1</strong></th>
+			<th style="width: 20%;"><strong>Ref 1 (Note)</strong></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td rowspan="8">Song 1</td>
+			<td rowspan="4">Singing prompt</td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td rowspan="4">Speech prompt</td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		</tbody>
+		<tr>
+			<td rowspan="4">Song 2</td>
+			<td rowspan="4">Speech prompt</td>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		<tr>
+			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
+			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
+		</tr>
+		</tbody>
+	</table>
+	<!--<footer style="text-align: left;margin-top: 1em;font-size: xx-small;display: inline-block;">
+		<p>Mandarin Speaker Fine-tune 示例文本来源：<a href="https://bcc.blcu.edu.cn/" target="_blank" style="color: deepskyblue;">BCC语料库</a>，部分有小调整。</p>
+	</footer>-->
+	
+	<br><br>
+
+	<h3>References:</h3>
+	<p>[1] Xxxxx Xxx, "", Xxxxx, 2025.</p>
+	
+	</section>
+</body>
+
+</html>
