@@ -213,6 +213,43 @@ p {
     height: 32px;
 }
 
+/* References Section */
+#references {
+    background: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.references-list {
+    margin-top: 20px;
+}
+
+.reference-item {
+    display: flex;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.reference-number {
+    font-weight: 600;
+    color: #2E86AB;
+    margin-right: 10px;
+    min-width: 30px;
+}
+
+.reference-text {
+    color: #555;
+    text-align: justify;
+}
+
+.reference-text em {
+    font-style: italic;
+    color: #2E86AB;
+}
+
 /* Footer */
 footer {
     text-align: center;
