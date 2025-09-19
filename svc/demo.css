@@ -87,6 +87,30 @@ p {
     color: #555;
 }
 
+/* Model Overview Section */
+.model-diagram {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.architecture-img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.diagram-caption {
+    font-style: italic;
+    color: #666;
+    font-size: 0.95rem;
+    text-align: center !important;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
 /* Audio Samples Table Layout */
 .comparison-table {
     width: 100%;
