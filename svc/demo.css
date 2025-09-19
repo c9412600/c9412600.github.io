@@ -87,39 +87,86 @@ p {
     color: #555;
 }
 
-/* Audio Samples */
-.sample-group {
-    margin-bottom: 30px;
+/* Audio Samples Table Layout */
+.comparison-table {
+    width: 100%;
+    margin: 20px 0;
 }
 
-.sample-item {
-    margin-bottom: 25px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.audio-comparison {
+.table-header {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 10px;
+    grid-template-columns: 150px repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #2E86AB;
 }
 
-.audio-item {
+.timbre-column {
+    /* Empty space for timbre labels */
+    display: block;
+}
+
+.method-column {
+    text-align: center;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #2E86AB;
+}
+
+.timbre-row {
+    display: grid;
+    grid-template-columns: 150px repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: start;
+}
+
+.timbre-label {
+    background: #e3f2fd;
+    padding: 20px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    color: #2E86AB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.vocal-samples {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #f0f7ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.vocal-item {
+    background: white;
+    padding: 12px;
+    border-radius: 5px;
     text-align: center;
 }
 
-.audio-item label {
+.vocal-item span {
     display: block;
     font-weight: 500;
     margin-bottom: 8px;
     color: #555;
+    font-size: 0.9rem;
 }
 
-audio {
+.vocal-item audio {
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
+    height: 35px;
 }
 
 /* Footer */
@@ -166,7 +213,18 @@ footer a:hover {
         padding: 25px;
     }
     
-    .audio-comparison {
+    .table-header,
+    .timbre-row {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .method-column {
+        margin-bottom: 10px;
+    }
+    
+    .timbre-label {
+        min-height: auto;
+        margin-bottom: 15px;
     }
 }

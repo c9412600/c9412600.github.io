@@ -48,59 +48,189 @@
         <section id="audio-samples">
           <h2>Audio Samples</h2>
 
-          <div class="sample-group">
-            <h3>Baseline vs. Our Method</h3>
+          <div class="comparison-table">
+            <!-- Header Row -->
+            <div class="table-header">
+              <div class="timbre-column"></div>
+              <div class="method-column">original vocal</div>
+              <div class="method-column">ours</div>
+              <div class="method-column">seedvc</div>
+              <div class="method-column">freevc</div>
+            </div>
 
-            <div class="sample-item">
-              <h4>Test Case 1</h4>
-              <div class="audio-comparison">
-                <div class="audio-item">
-                  <label>Baseline Method</label>
+            <!-- Timbre 1 Row -->
+            <div class="timbre-row">
+              <div class="timbre-label">
+                <span>timbre 1 wav</span>
+              </div>
+              <div class="vocal-samples">
+                <div class="vocal-item">
+                  <span>vocal1</span>
                   <audio controls>
-                    <source src="path/to/baseline1.wav" type="audio/wav" />
-                    Your browser does not support the audio element.
+                    <source
+                      src="path/to/original_timbre1_vocal1.wav"
+                      type="audio/wav"
+                    />
                   </audio>
                 </div>
-                <div class="audio-item">
-                  <label>Our Method</label>
+                <div class="vocal-item">
+                  <span>vocal2</span>
                   <audio controls>
-                    <source src="path/to/ours1.wav" type="audio/wav" />
-                    Your browser does not support the audio element.
+                    <source
+                      src="path/to/original_timbre1_vocal2.wav"
+                      type="audio/wav"
+                    />
                   </audio>
                 </div>
-                <div class="audio-item">
-                  <label>Ground Truth</label>
+                <div class="vocal-item">
+                  <span>vocal3</span>
                   <audio controls>
-                    <source src="path/to/ground_truth1.wav" type="audio/wav" />
-                    Your browser does not support the audio element.
+                    <source
+                      src="path/to/original_timbre1_vocal3.wav"
+                      type="audio/wav"
+                    />
+                  </audio>
+                </div>
+              </div>
+              <div class="vocal-samples">
+                <div class="vocal-item">
+                  <span>vocal1</span>
+                  <audio controls>
+                    <source
+                      src="path/to/ours_timbre1_vocal1.wav"
+                      type="audio/wav"
+                    />
+                  </audio>
+                </div>
+                <div class="vocal-item">
+                  <span>vocal2</span>
+                  <audio controls>
+                    <source
+                      src="path/to/ours_timbre1_vocal2.wav"
+                      type="audio/wav"
+                    />
+                  </audio>
+                </div>
+                <div class="vocal-item">
+                  <span>vocal3</span>
+                  <audio controls>
+                    <source
+                      src="path/to/ours_timbre1_vocal3.wav"
+                      type="audio/wav"
+                    />
+                  </audio>
+                </div>
+              </div>
+              <div class="vocal-samples">
+                <div class="vocal-item">
+                  <span>vocal1</span>
+                  <audio controls>
+                    <source
+                      src="path/to/seedvc_timbre1_vocal1.wav"
+                      type="audio/wav"
+                    />
+                  </audio>
+                </div>
+                <div class="vocal-item">
+                  <span>vocal2</span>
+                  <audio controls>
+                    <source
+                      src="path/to/seedvc_timbre1_vocal2.wav"
+                      type="audio/wav"
+                    />
+                  </audio>
+                </div>
+                <div class="vocal-item">
+                  <span>vocal3</span>
+                  <audio controls>
+                    <source
+                      src="path/to/seedvc_timbre1_vocal3.wav"
+                      type="audio/wav"
+                    />
+                  </audio>
+                </div>
+              </div>
+              <div class="vocal-samples">
+                <div class="vocal-item">
+                  <span>vocal1</span>
+                  <audio controls>
+                    <source
+                      src="path/to/freevc_timbre1_vocal1.wav"
+                      type="audio/wav"
+                    />
+                  </audio>
+                </div>
+                <div class="vocal-item">
+                  <span>vocal2</span>
+                  <audio controls>
+                    <source
+                      src="path/to/freevc_timbre1_vocal2.wav"
+                      type="audio/wav"
+                    />
+                  </audio>
+                </div>
+                <div class="vocal-item">
+                  <span>vocal3</span>
+                  <audio controls>
+                    <source
+                      src="path/to/freevc_timbre1_vocal3.wav"
+                      type="audio/wav"
+                    />
                   </audio>
                 </div>
               </div>
             </div>
 
-            <div class="sample-item">
-              <h4>Test Case 2</h4>
-              <div class="audio-comparison">
-                <div class="audio-item">
-                  <label>Baseline Method</label>
-                  <audio controls>
-                    <source src="path/to/baseline2.wav" type="audio/wav" />
-                    Your browser does not support the audio element.
-                  </audio>
+            <!-- Timbre 2 Row -->
+            <div class="timbre-row">
+              <div class="timbre-label">
+                <span>timbre 2 wav</span>
+              </div>
+              <div class="vocal-samples">
+                <div class="vocal-item">
+                  <span>...</span>
                 </div>
-                <div class="audio-item">
-                  <label>Our Method</label>
-                  <audio controls>
-                    <source src="path/to/ours2.wav" type="audio/wav" />
-                    Your browser does not support the audio element.
-                  </audio>
+              </div>
+              <div class="vocal-samples">
+                <div class="vocal-item">
+                  <span>...</span>
                 </div>
-                <div class="audio-item">
-                  <label>Ground Truth</label>
-                  <audio controls>
-                    <source src="path/to/ground_truth2.wav" type="audio/wav" />
-                    Your browser does not support the audio element.
-                  </audio>
+              </div>
+              <div class="vocal-samples">
+                <div class="vocal-item">
+                  <span>...</span>
+                </div>
+              </div>
+              <div class="vocal-samples">
+                <div class="vocal-item">
+                  <span>...</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timbre 3 Row -->
+            <div class="timbre-row">
+              <div class="timbre-label">
+                <span>timbre 3 wav</span>
+              </div>
+              <div class="vocal-samples">
+                <div class="vocal-item">
+                  <span>...</span>
+                </div>
+              </div>
+              <div class="vocal-samples">
+                <div class="vocal-item">
+                  <span>...</span>
+                </div>
+              </div>
+              <div class="vocal-samples">
+                <div class="vocal-item">
+                  <span>...</span>
+                </div>
+              </div>
+              <div class="vocal-samples">
+                <div class="vocal-item">
+                  <span>...</span>
                 </div>
               </div>
             </div>
