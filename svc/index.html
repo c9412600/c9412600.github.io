@@ -3,219 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo page of R2-SVC</title>
+    <title>R2-SVC Demo</title>
     <link rel="stylesheet" href="demo.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <!-- Header Section -->
-    <header class="header">
-      <div class="container">
-        <h1 class="title">
-          R2-SVC: TOWARDS REAL-WORLD ROBUST AND EXPRESSIVE ZERO-SHOT SINGING
-          VOICE CONVERSION
+    <div class="container">
+      <header>
+        <h1>
+          R2-SVC: Towards Real-World Robust and Expressive Zero-Shot Singing
+          Voice Conversion
         </h1>
-        <p class="subtitle">A work submitted to ICASSP 2026</p>
-      </div>
-    </header>
+        <p>Submitted to ICASSP 2026</p>
+      </header>
 
-    <!-- Navigation -->
-    <nav class="navigation">
-      <div class="container">
-        <ul class="nav-list">
-          <li><a href="#abstract">Abstract</a></li>
-          <li><a href="#methodology">Methodology</a></li>
-          <li><a href="#samples">Audio Samples</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="main">
-      <div class="container">
-        <!-- Abstract Section -->
-        <section id="abstract" class="section">
-          <h2 class="section-title">Abstract</h2>
-          <div class="content-box">
-            <p class="abstract-text">
-              In real-world singing voice conversion (SVC) applications,
-              environmental noise and the demand for expressive output pose
-              significant challenges. Conventional methods, however, are
-              typically designed without accounting for real deployment
-              scenarios, as both training and inference usually rely on clean
-              data. This mismatch hinders practical use, given the inevitable
-              presence of diverse noise sources and artifacts from music
-              separation. To tackle these issues, we propose R2-SVC, a robust
-              and expressive SVC framework. First, we introduce simulation-based
-              robustness enhancement through random fundamental frequency
-              ($F_0$) perturbations and music separation artifact simulations
-              (e.g., reverberation, echo), substantially improving performance
-              under noisy conditions. Second, we enrich speaker representation
-              using domain-specific singing data: alongside clean vocals, we
-              incorporate DNSMOS-filtered separated vocals and public singing
-              corpora, enabling the model to preserve speaker timbre while
-              capturing singing style nuances. Third, we integrate the Neural
-              Source-Filter (NSF) model to explicitly represent harmonic and
-              noise components, enhancing the naturalness and controllability of
-              converted singing. R2-SVC achieves state-of-the-art results on
-              multiple SVC benchmarks under both clean and noisy conditions.
-            </p>
-          </div>
+      <main>
+        <section id="abstract">
+          <h2>Abstract</h2>
+          <p>
+            In real-world singing voice conversion (SVC) applications,
+            environmental noise and the demand for expressive output pose
+            significant challenges. Conventional methods, however, are typically
+            designed without accounting for real deployment scenarios, as both
+            training and inference usually rely on clean data. This mismatch
+            hinders practical use, given the inevitable presence of diverse
+            noise sources and artifacts from music separation. To tackle these
+            issues, we propose R2-SVC, a robust and expressive SVC framework.
+            First, we introduce simulation-based robustness enhancement through
+            random fundamental frequency (F₀) perturbations and music separation
+            artifact simulations (e.g., reverberation, echo), substantially
+            improving performance under noisy conditions. Second, we enrich
+            speaker representation using domain-specific singing data: alongside
+            clean vocals, we incorporate DNSMOS-filtered separated vocals and
+            public singing corpora, enabling the model to preserve speaker
+            timbre while capturing singing style nuances. Third, we integrate
+            the Neural Source-Filter (NSF) model to explicitly represent
+            harmonic and noise components, enhancing the naturalness and
+            controllability of converted singing. R2-SVC achieves
+            state-of-the-art results on multiple SVC benchmarks under both clean
+            and noisy conditions.
+          </p>
         </section>
 
-        <!-- Methodology Section -->
-        <section id="methodology" class="section">
-          <h2 class="section-title">Methodology Overview</h2>
-          <div class="content-box">
-            <div class="methodology-grid">
-              <div class="method-card">
-                <i class="fas fa-brain method-icon"></i>
-                <h3>Neural Architecture</h3>
-                <p>
-                  Advanced neural network design optimized for audio generation
-                  tasks.
-                </p>
-              </div>
-              <div class="method-card">
-                <i class="fas fa-wave-square method-icon"></i>
-                <h3>Signal Processing</h3>
-                <p>
-                  Novel signal processing techniques for enhanced audio quality.
-                </p>
-              </div>
-              <div class="method-card">
-                <i class="fas fa-chart-line method-icon"></i>
-                <h3>Training Strategy</h3>
-                <p>
-                  Innovative training methodology for improved convergence and
-                  stability.
-                </p>
+        <section id="audio-samples">
+          <h2>Audio Samples</h2>
+
+          <div class="sample-group">
+            <h3>Baseline vs. Our Method</h3>
+
+            <div class="sample-item">
+              <h4>Test Case 1</h4>
+              <div class="audio-comparison">
+                <div class="audio-item">
+                  <label>Baseline Method</label>
+                  <audio controls>
+                    <source src="path/to/baseline1.wav" type="audio/wav" />
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+                <div class="audio-item">
+                  <label>Our Method</label>
+                  <audio controls>
+                    <source src="path/to/ours1.wav" type="audio/wav" />
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+                <div class="audio-item">
+                  <label>Ground Truth</label>
+                  <audio controls>
+                    <source src="path/to/ground_truth1.wav" type="audio/wav" />
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
 
-        <!-- Comparisons Section -->
-        <section id="comparisons" class="section">
-          <h2 class="section-title">Method Comparisons</h2>
-
-          <div class="comparison-category">
-            <h3 class="category-title">
-              <i class="fas fa-balance-scale"></i>
-              Baseline vs. Our Method
-            </h3>
-
-            <div class="comparison-table">
-              <div class="comparison-row">
-                <div class="comparison-header">
-                  <h4>Test Case 1</h4>
-                  <p class="test-description">
-                    Comparison description and context
-                  </p>
+            <div class="sample-item">
+              <h4>Test Case 2</h4>
+              <div class="audio-comparison">
+                <div class="audio-item">
+                  <label>Baseline Method</label>
+                  <audio controls>
+                    <source src="path/to/baseline2.wav" type="audio/wav" />
+                    Your browser does not support the audio element.
+                  </audio>
                 </div>
-                <div class="comparison-audio">
-                  <div class="comparison-item">
-                    <h5>Baseline Method</h5>
-                    <audio controls class="audio-player">
-                      <source src="path/to/baseline1.wav" type="audio/wav" />
-                    </audio>
-                  </div>
-                  <div class="comparison-item">
-                    <h5>Our Method</h5>
-                    <audio controls class="audio-player">
-                      <source src="path/to/ours1.wav" type="audio/wav" />
-                    </audio>
-                  </div>
-                  <div class="comparison-item">
-                    <h5>Ground Truth</h5>
-                    <audio controls class="audio-player">
-                      <source
-                        src="path/to/ground_truth1.wav"
-                        type="audio/wav"
-                      />
-                    </audio>
-                  </div>
+                <div class="audio-item">
+                  <label>Our Method</label>
+                  <audio controls>
+                    <source src="path/to/ours2.wav" type="audio/wav" />
+                    Your browser does not support the audio element.
+                  </audio>
                 </div>
-              </div>
-
-              <div class="comparison-row">
-                <div class="comparison-header">
-                  <h4>Test Case 2</h4>
-                  <p class="test-description">Another comparison scenario</p>
-                </div>
-                <div class="comparison-audio">
-                  <div class="comparison-item">
-                    <h5>Baseline Method</h5>
-                    <audio controls class="audio-player">
-                      <source src="path/to/baseline2.wav" type="audio/wav" />
-                    </audio>
-                  </div>
-                  <div class="comparison-item">
-                    <h5>Our Method</h5>
-                    <audio controls class="audio-player">
-                      <source src="path/to/ours2.wav" type="audio/wav" />
-                    </audio>
-                  </div>
-                  <div class="comparison-item">
-                    <h5>Ground Truth</h5>
-                    <audio controls class="audio-player">
-                      <source
-                        src="path/to/ground_truth2.wav"
-                        type="audio/wav"
-                      />
-                    </audio>
-                  </div>
+                <div class="audio-item">
+                  <label>Ground Truth</label>
+                  <audio controls>
+                    <source src="path/to/ground_truth2.wav" type="audio/wav" />
+                    Your browser does not support the audio element.
+                  </audio>
                 </div>
               </div>
             </div>
           </div>
         </section>
-      </div>
-    </main>
+      </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h4>Paper Information</h4>
-            <p>Submitted to ICASSP 2026</p>
-            <div class="links">
-              <a href="#paper" class="footer-link">
-                <i class="fas fa-file-pdf"></i> Paper PDF
-              </a>
-              <a href="#code" class="footer-link">
-                <i class="fab fa-github"></i> Code Repository
-              </a>
-            </div>
-          </div>
-          <!-- <div class="footer-section">
-            <h4>Citation</h4>
-            <div class="citation-box">
-              <code>
-                @article{yourpaper2024,<br />
-                &nbsp;&nbsp;title={Your Paper Title},<br />
-                &nbsp;&nbsp;author={Author Names},<br />
-                &nbsp;&nbsp;journal={Journal Name},<br />
-                &nbsp;&nbsp;year={2024}<br />
-                }
-              </code>
-            </div>
-          </div> -->
-        </div>
-        <!-- <div class="footer-bottom">
-          <p>&copy; 2024 Research Institution. All rights reserved.</p>
-        </div> -->
-      </div>
-    </footer>
-
-    <script src="demo.js"></script>
+      <footer>
+        <p>Paper submitted to ICASSP 2026</p>
+        <p>
+          <a href="#paper">Paper PDF</a> | <a href="#code">Code Repository</a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
