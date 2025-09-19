@@ -18,17 +18,20 @@
     <!-- Header Section -->
     <header class="header">
       <div class="container">
-        <h1 class="title">Audio Synthesis Research Demo</h1>
-        <p class="subtitle">Interactive Audio Samples and Comparisons</p>
-        <div class="authors">
+        <h1 class="title">
+          R2-SVC: TOWARDS REAL-WORLD ROBUST AND EXPRESSIVE ZERO-SHOT SINGING
+          VOICE CONVERSION
+        </h1>
+        <p class="subtitle">A work submitted to ICASSP 2026</p>
+        <!-- <div class="authors">
           <span class="author">Author Name<sup>1</sup></span>
           <span class="author">Co-Author Name<sup>2</sup></span>
           <span class="author">Another Author<sup>1</sup></span>
-        </div>
-        <div class="affiliations">
+        </div> -->
+        <!-- <div class="affiliations">
           <div class="affiliation"><sup>1</sup>University/Institution Name</div>
           <div class="affiliation"><sup>2</sup>Second Institution Name</div>
-        </div>
+        </div> -->
       </div>
     </header>
 
@@ -53,12 +56,27 @@
           <h2 class="section-title">Abstract</h2>
           <div class="content-box">
             <p class="abstract-text">
-              This research presents a novel approach to audio synthesis using
-              advanced machine learning techniques. Our method demonstrates
-              significant improvements in audio quality, naturalness, and
-              controllability compared to existing state-of-the-art approaches.
-              The following interactive demonstrations showcase the capabilities
-              of our proposed system across various audio generation tasks.
+              In real-world singing voice conversion (SVC) applications,
+              environmental noise and the demand for expressive output pose
+              significant challenges. Conventional methods, however, are
+              typically designed without accounting for real deployment
+              scenarios, as both training and inference usually rely on clean
+              data. This mismatch hinders practical use, given the inevitable
+              presence of diverse noise sources and artifacts from music
+              separation. To tackle these issues, we propose R2-SVC, a robust
+              and expressive SVC framework. First, we introduce simulation-based
+              robustness enhancement through random fundamental frequency
+              ($F_0$) perturbations and music separation artifact simulations
+              (e.g., reverberation, echo), substantially improving performance
+              under noisy conditions. Second, we enrich speaker representation
+              using domain-specific singing data: alongside clean vocals, we
+              incorporate DNSMOS-filtered separated vocals and public singing
+              corpora, enabling the model to preserve speaker timbre while
+              capturing singing style nuances. Third, we integrate the Neural
+              Source-Filter (NSF) model to explicitly represent harmonic and
+              noise components, enhancing the naturalness and controllability of
+              converted singing. R2-SVC achieves state-of-the-art results on
+              multiple SVC benchmarks under both clean and noisy conditions.
             </p>
           </div>
         </section>
@@ -228,7 +246,7 @@
         </section>
 
         <!-- Results Section -->
-        <section id="results" class="section">
+        <!-- <section id="results" class="section">
           <h2 class="section-title">Key Findings</h2>
           <div class="content-box">
             <div class="results-grid">
@@ -250,7 +268,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
       </div>
     </main>
 
