@@ -95,10 +95,10 @@ p {
 
 .table-header {
     display: grid;
-    grid-template-columns: 150px repeat(4, 1fr);
-    gap: 10px;
-    margin-bottom: 10px;
-    padding: 15px;
+    grid-template-columns: 180px repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 15px;
+    padding: 15px 5px;
     background: #f8f9fa;
     border-radius: 8px;
     font-weight: 600;
@@ -120,53 +120,68 @@ p {
 
 .timbre-row {
     display: grid;
-    grid-template-columns: 150px repeat(4, 1fr);
-    gap: 10px;
-    margin-bottom: 15px;
+    grid-template-columns: 180px repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
     align-items: start;
 }
 
 .timbre-label {
     background: #e3f2fd;
-    padding: 20px 15px;
+    padding: 15px;
     border-radius: 8px;
     text-align: center;
     font-weight: 500;
     color: #2E86AB;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 200px;
+    gap: 10px;
+}
+
+.timbre-label span {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.timbre-label audio {
+    width: 100%;
+    max-width: 140px;
+    height: 35px;
 }
 
 .vocal-samples {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     background: #f0f7ff;
-    padding: 15px;
+    padding: 12px;
     border-radius: 8px;
+    border: 1px solid #e1f0ff;
 }
 
 .vocal-item {
     background: white;
-    padding: 12px;
+    padding: 10px;
     border-radius: 5px;
     text-align: center;
+    border: 1px solid #f0f0f0;
 }
 
 .vocal-item span {
     display: block;
     font-weight: 500;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     color: #555;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .vocal-item audio {
     width: 100%;
-    max-width: 200px;
-    height: 35px;
+    max-width: 180px;
+    height: 32px;
 }
 
 /* Footer */
