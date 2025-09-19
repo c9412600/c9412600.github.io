@@ -147,7 +147,7 @@ p {
     grid-template-columns: 180px repeat(4, 1fr);
     gap: 12px;
     margin-bottom: 20px;
-    align-items: start;
+    align-items: stretch;
 }
 
 .timbre-label {
@@ -160,20 +160,24 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 200px;
+    justify-content: flex-start;
+    height: 100%;
     gap: 10px;
+    border: 2px solid #2E86AB;
 }
 
 .timbre-label span {
     font-size: 0.95rem;
     margin-bottom: 8px;
+    font-weight: 600;
 }
 
 .timbre-label audio {
     width: 100%;
     max-width: 140px;
     height: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .vocal-samples {
@@ -184,6 +188,7 @@ p {
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #e1f0ff;
+    height: 100%;
 }
 
 .vocal-item {
