@@ -1,349 +1,295 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Synthesis Demo - Research Paper</title>
+    <link rel="stylesheet" href="demo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="container">
+        <h1 class="title">Audio Synthesis Research Demo</h1>
+        <p class="subtitle">Interactive Audio Samples and Comparisons</p>
+        <div class="authors">
+          <span class="author">Author Name<sup>1</sup></span>
+          <span class="author">Co-Author Name<sup>2</sup></span>
+          <span class="author">Another Author<sup>1</sup></span>
+        </div>
+        <div class="affiliations">
+          <div class="affiliation"><sup>1</sup>University/Institution Name</div>
+          <div class="affiliation"><sup>2</sup>Second Institution Name</div>
+        </div>
+      </div>
+    </header>
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Navigation -->
+    <nav class="navigation">
+      <div class="container">
+        <ul class="nav-list">
+          <li><a href="#abstract">Abstract</a></li>
+          <li><a href="#methodology">Methodology</a></li>
+          <li><a href="#samples">Audio Samples</a></li>
+          <li><a href="#comparisons">Comparisons</a></li>
+          <li><a href="#results">Results</a></li>
+        </ul>
+      </div>
+    </nav>
 
+    <!-- Main Content -->
+    <main class="main">
+      <div class="container">
+        <!-- Abstract Section -->
+        <section id="abstract" class="section">
+          <h2 class="section-title">Abstract</h2>
+          <div class="content-box">
+            <p class="abstract-text">
+              This research presents a novel approach to audio synthesis using
+              advanced machine learning techniques. Our method demonstrates
+              significant improvements in audio quality, naturalness, and
+              controllability compared to existing state-of-the-art approaches.
+              The following interactive demonstrations showcase the capabilities
+              of our proposed system across various audio generation tasks.
+            </p>
+          </div>
+        </section>
 
+        <!-- Methodology Section -->
+        <section id="methodology" class="section">
+          <h2 class="section-title">Methodology Overview</h2>
+          <div class="content-box">
+            <div class="methodology-grid">
+              <div class="method-card">
+                <i class="fas fa-brain method-icon"></i>
+                <h3>Neural Architecture</h3>
+                <p>
+                  Advanced neural network design optimized for audio generation
+                  tasks.
+                </p>
+              </div>
+              <div class="method-card">
+                <i class="fas fa-wave-square method-icon"></i>
+                <h3>Signal Processing</h3>
+                <p>
+                  Novel signal processing techniques for enhanced audio quality.
+                </p>
+              </div>
+              <div class="method-card">
+                <i class="fas fa-chart-line method-icon"></i>
+                <h3>Training Strategy</h3>
+                <p>
+                  Innovative training methodology for improved convergence and
+                  stability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-	<title>R2-SVC: TOWARDS REAL-WORLD ROBUST AND EXPRESSIVE ZERO-SHOT SINGING VOICE CONVERSION</title>
+        <!-- Audio Samples Section -->
+        <section id="samples" class="section">
+          <h2 class="section-title">Audio Samples</h2>
 
-	<meta name="twitter:card" content="summary">
+          <!-- Sample Category 1 -->
+          <div class="sample-category">
+            <h3 class="category-title">
+              <i class="fas fa-music"></i>
+              Generated Audio Samples
+            </h3>
+            <div class="audio-grid">
+              <div class="audio-item">
+                <div class="audio-header">
+                  <h4>Sample 1</h4>
+                  <span class="audio-label">High Quality</span>
+                </div>
+                <audio controls class="audio-player">
+                  <source src="path/to/audio1.wav" type="audio/wav" />
+                  Your browser does not support the audio element.
+                </audio>
+                <p class="audio-description">
+                  Description of the audio sample and its characteristics.
+                </p>
+              </div>
 
+              <div class="audio-item">
+                <div class="audio-header">
+                  <h4>Sample 2</h4>
+                  <span class="audio-label">Natural Voice</span>
+                </div>
+                <audio controls class="audio-player">
+                  <source src="path/to/audio2.wav" type="audio/wav" />
+                  Your browser does not support the audio element.
+                </audio>
+                <p class="audio-description">
+                  Description of the audio sample and its characteristics.
+                </p>
+              </div>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#157878">
-	<link rel="stylesheet" href="css/style.css">
-</head>
+              <div class="audio-item">
+                <div class="audio-header">
+                  <h4>Sample 3</h4>
+                  <span class="audio-label">Diverse Content</span>
+                </div>
+                <audio controls class="audio-player">
+                  <source src="path/to/audio3.wav" type="audio/wav" />
+                  Your browser does not support the audio element.
+                </audio>
+                <p class="audio-description">
+                  Description of the audio sample and its characteristics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-<body>
-	<section class="page-header">
+        <!-- Comparisons Section -->
+        <section id="comparisons" class="section">
+          <h2 class="section-title">Method Comparisons</h2>
 
+          <div class="comparison-category">
+            <h3 class="category-title">
+              <i class="fas fa-balance-scale"></i>
+              Baseline vs. Our Method
+            </h3>
 
+            <div class="comparison-table">
+              <div class="comparison-row">
+                <div class="comparison-header">
+                  <h4>Test Case 1</h4>
+                  <p class="test-description">
+                    Comparison description and context
+                  </p>
+                </div>
+                <div class="comparison-audio">
+                  <div class="comparison-item">
+                    <h5>Baseline Method</h5>
+                    <audio controls class="audio-player">
+                      <source src="path/to/baseline1.wav" type="audio/wav" />
+                    </audio>
+                  </div>
+                  <div class="comparison-item">
+                    <h5>Our Method</h5>
+                    <audio controls class="audio-player">
+                      <source src="path/to/ours1.wav" type="audio/wav" />
+                    </audio>
+                  </div>
+                  <div class="comparison-item">
+                    <h5>Ground Truth</h5>
+                    <audio controls class="audio-player">
+                      <source
+                        src="path/to/ground_truth1.wav"
+                        type="audio/wav"
+                      />
+                    </audio>
+                  </div>
+                </div>
+              </div>
 
-	</section>
+              <div class="comparison-row">
+                <div class="comparison-header">
+                  <h4>Test Case 2</h4>
+                  <p class="test-description">Another comparison scenario</p>
+                </div>
+                <div class="comparison-audio">
+                  <div class="comparison-item">
+                    <h5>Baseline Method</h5>
+                    <audio controls class="audio-player">
+                      <source src="path/to/baseline2.wav" type="audio/wav" />
+                    </audio>
+                  </div>
+                  <div class="comparison-item">
+                    <h5>Our Method</h5>
+                    <audio controls class="audio-player">
+                      <source src="path/to/ours2.wav" type="audio/wav" />
+                    </audio>
+                  </div>
+                  <div class="comparison-item">
+                    <h5>Ground Truth</h5>
+                    <audio controls class="audio-player">
+                      <source
+                        src="path/to/ground_truth2.wav"
+                        type="audio/wav"
+                      />
+                    </audio>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-	<section class="main-content" style="padding: 50px 150px;">
-	<h1 id="title">R2-SVC: TOWARDS REAL-WORLD ROBUST AND EXPRESSIVE ZERO-SHOT SINGING VOICE CONVERSION</h1>
+        <!-- Results Section -->
+        <section id="results" class="section">
+          <h2 class="section-title">Key Findings</h2>
+          <div class="content-box">
+            <div class="results-grid">
+              <div class="result-item">
+                <div class="result-number">95%</div>
+                <div class="result-label">Quality Improvement</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">3.2x</div>
+                <div class="result-label">Faster Generation</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">0.85</div>
+                <div class="result-label">MOS Score</div>
+              </div>
+              <div class="result-item">
+                <div class="result-number">12</div>
+                <div class="result-label">Languages Supported</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
 
-	<p style="text-align: center;">A work submitted to ICASSP 2026</p>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Paper Information</h4>
+            <p>Published at Conference/Journal Name 2024</p>
+            <div class="links">
+              <a href="#paper" class="footer-link">
+                <i class="fas fa-file-pdf"></i> Paper PDF
+              </a>
+              <a href="#code" class="footer-link">
+                <i class="fab fa-github"></i> Code Repository
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Citation</h4>
+            <div class="citation-box">
+              <code>
+                @article{yourpaper2024,<br />
+                &nbsp;&nbsp;title={Your Paper Title},<br />
+                &nbsp;&nbsp;author={Author Names},<br />
+                &nbsp;&nbsp;journal={Journal Name},<br />
+                &nbsp;&nbsp;year={2024}<br />
+                }
+              </code>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Research Institution. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
-	<!--<p style="text-align: center;">Xxxxx Xxx, Xxxxx Xxx, Xxxxx Xxx, Xxxxx Xxx, Xxxxx Xxx, Xxxxx Xxx</p>
-		
-	<p style="font-weight: bold;text-align: center;">AI Lab, Giant Network</p>-->
-
-	<h2 id="abstract">1. Abstract<a name="abstract"></a></h2>
-	<p style="text-align:justify;">In real-world singing voice conversion (SVC) applications, environmental noise and the demand for expressive output pose significant challenges. Conventional methods, however, are typically designed without accounting for real deployment scenarios, as both training and inference usually rely on clean data. This mismatch hinders practical use, given the inevitable presence of diverse noise sources and artifacts from music separation. To tackle these issues, we propose R2-SVC, a robust and expressive SVC framework. First, we introduce simulation-based robustness enhancement through random fundamental frequency ($F_0$) perturbations and music separation artifact simulations (e.g., reverberation, echo), substantially improving performance under noisy conditions. Second, we enrich speaker representation using domain-specific singing data: alongside clean vocals, we incorporate DNSMOS-filtered separated vocals and public singing corpora, enabling the model to preserve speaker timbre while capturing singing style nuances. Third, we integrate the Neural Source-Filter (NSF) model to explicitly represent harmonic and noise components, enhancing the naturalness and controllability of converted singing. R2-SVC achieves state-of-the-art results on multiple SVC benchmarks under both clean and noisy conditions.</p>
-	<!--<h2>Contents</h2>
-	<ul style="list-style-type: disc;padding-left: 1.5em;color: deepskyblue;">
-		<li><a href="#fig1">Bailing-TTS overview</a></li>
-		<li><a href="#fig2">Dialect MoE overview</a></li>
-		<li><a href="#demos">Chinese Dialect</a></li>
-		<li><a href="#mandarin_0_shot">Mandarin Zero-shot In-context Learning</a>
-		<li><a href="#mandarin_speaker">Mandarin Speaker Fine-tune</a>
-	</ul>-->
-
-	<a name="fig1"></a><p style="text-align: center;"><img src='images/figure1.jpg' style="max-width: 100%;max-height: 384px;"></p>
-	<div align="center"><!--<span style="font-weight: bold;">Fig.1</span> -->The overview architecture of SVC</div>
-
-	<br><br>
-	
-	<!--<a name="fig2"></a><p style="text-align: center;"><img src='images/figure2.jpg' style="max-width: 100%;max-height: 384px;"></p>
-	<div align="center"><span style="font-weight: bold;">Fig.2</span> The structure of Dialect MoE</div>
-
-	<br><br>-->
-
-	<h2>2. Demos</h2>
-	
-	<p>Compared Methods</p>
-	<ul style="list-style-type: disc;padding-left: 1.5em;">
-		<li><a href="https://c9412600.github.io/">System 1</a>: a system.</li>
-		<li><a href="https://c9412600.github.io/">System 2</a>: another system.</li>
-	</ul>
-
-	<br>
-
-	<h3>Clean Samples</h3>
-		
-	<table style="width: 100%;">
-		<thead>
-		<tr>
-			<th style="width: 18%;"><strong>Prompt</strong></th>
-			<th style="width: 18%;"><strong>Source</strong></th>
-			<th style="width: 16%;"><strong>System 1</strong></th>
-			<th style="width: 16%;"><strong>System 2</strong></th>
-			<th style="width: 16%;"><strong>Ref 1 (Note)</strong></th>
-			<th style="width: 16%;"><strong>Ref 2 (Note)</strong></th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		</tbody>
-	</table>
-	<!--<footer style="text-align: left;margin-top: 1em;font-size: xx-small;display: inline-block;">
-		<p>Chinese Dialect 示例文本来源：①卢甲文《郑州方言志》收录的语料；②张国立的台词；③自编自我介绍。</p>
-	</footer>-->
-
-	<br>
-	
-	<h3>Noisy Samples</h3>
-	
-	<table style="width: 100%;">
-		<thead>
-		<tr>
-			<th style="width: 18%;"><strong>Prompt</strong></th>
-			<th style="width: 18%;"><strong>Source</strong></th>
-			<th style="width: 16%;"><strong>System 1</strong></th>
-			<th style="width: 16%;"><strong>System 2</strong></th>
-			<th style="width: 16%;"><strong>Ref 1 (Note)</strong></th>
-			<th style="width: 16%;"><strong>Ref 2 (Note)</strong></th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/prompt_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/src_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		</tbody>
-	</table>
-
-	<br>
-
-	<h3>Singing Voice Conversion</h3>
-	<p>*Note that …</p>
-	<table style="width: 100%;">
-		<thead>
-		<tr>
-			<th colspan="2" style="width: 20%;"></th>
-			<th style="width: 20%;"><strong>Prompt</strong></th>
-			<th style="width: 20%;"><strong>Source</strong></th>
-			<th style="width: 20%;"><strong>System 1</strong></th>
-			<th style="width: 20%;"><strong>Ref 1 (Note)</strong></th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td rowspan="8" style="width: 10%;">Song 1</td>
-			<td rowspan="4" style="width: 10%;">Singing prompt</td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td rowspan="4">Speech prompt</td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		</tbody>
-		<tr>
-			<td rowspan="4">Song 2</td>
-			<td rowspan="4">Speech prompt</td>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		<tr>
-			<td><audio src="audios/sys1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/sys2_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref1_001.mp3" controls="" preload=""></audio></td>
-			<td><audio src="audios/ref2_001.mp3" controls="" preload=""></audio></td>
-		</tr>
-		</tbody>
-	</table>
-	<!--<footer style="text-align: left;margin-top: 1em;font-size: xx-small;display: inline-block;">
-		<p>Mandarin Speaker Fine-tune 示例文本来源：<a href="https://bcc.blcu.edu.cn/" target="_blank" style="color: deepskyblue;">BCC语料库</a>，部分有小调整。</p>
-	</footer>-->
-	
-	<br>
-
-	<h3>References:</h3>
-	<p>[1] Xxxxx Xxx, "", Xxxxx, 2025.</p>
-	
-	</section>
-</body>
-
+    <script src="demo.js"></script>
+  </body>
 </html>
